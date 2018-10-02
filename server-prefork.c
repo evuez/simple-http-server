@@ -73,6 +73,7 @@ int main() {
 
 void start_server() {
    struct addrinfo hints, *res, *r;
+   memset(&hints, 0, sizeof hints);
 
    // See getaddrinfo(2) for more info
    hints.ai_family = AF_INET;
